@@ -7,7 +7,7 @@ wss-go is a reverse shell using websocket with tls.<br />
 ```shell
 go env -w GOOS=windows
 go build -o wssServer server/server.go
-go build -o wssClient -ldflags "-s -w" -H=windowsgui client/client.go
+go build -o wssClient -ldflags -H=windowsgui -ldflags "-s -w" client/client.go
 ```
 ### Screenshots
 ![](images/serverMac.png)
