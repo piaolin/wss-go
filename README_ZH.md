@@ -25,8 +25,8 @@
 
 ```shell
 go env -w GOOS=windows
-go build -o wssServer server/server.go
-go build -o wssClient -ldflags -H=windowsgui -ldflags "-s -w" client/client.go
+go build -o wssServer.exe server/server.go
+go build -o wssClient.exe -ldflags -H=windowsgui -ldflags "-s -w" client/client.go
 ```
 
 ### 截屏
